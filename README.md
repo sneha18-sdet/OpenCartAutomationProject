@@ -51,18 +51,6 @@ src/
 ├── runners (TestNG/Cucumber runners)
 ├── reports (Extent Reports)
 
----
-
-## How to Run the Project
-
-1. Clone the repository:
-   git clone https://github.com/sneha18-sdet/OpenCartAutomationProject.git
-
-2. Navigate to project folder:
-   cd OpenCartAutomationProject
-
-3. Run tests:
-   mvn clean test
 
 ---
 
