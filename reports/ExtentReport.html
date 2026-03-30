@@ -1,0 +1,2073 @@
+
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<title>Sneha Sahu - OpenCart SDET Report</title>
+<link rel="apple-touch-icon" href="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@b00a2d0486596e73dd7326beacf352c639623a0e/commons/img/logo.png">
+<link rel="shortcut icon" href="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@b00a2d0486596e73dd7326beacf352c639623a0e/commons/img/logo.png">
+<link href="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@ce8b10435bcbae260c334c0d0c6b61d2c19b6168/spark/css/spark-style.css" rel="stylesheet" />
+<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@7cc78ce/spark/js/jsontree.js"></script>
+<style type="text/css"></style></head><body class="spa bdd-report dark">
+  <div class="app">
+    <div class="layout">
+<div class="header navbar">
+<div class="vheader">
+<div class="nav-logo">
+<a href="#">
+<div class="logo" style="background-image: url('https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@b00a2d0486596e73dd7326beacf352c639623a0e/commons/img/logo.png')"></div>
+</a>
+</div>
+<ul class="nav-left">
+<li class="search-box">
+<a class="search-toggle" href="#">
+<i class="search-icon fa fa-search"></i>
+<i class="search-icon-close fa fa-close"></i>
+</a>
+</li>
+<li class="search-input"><input id="search-tests" class="form-control" type="text" placeholder="Search..."></li>
+</ul>
+<ul class="nav-right">
+<li class="m-r-10">
+<a href="#"><span class="badge badge-primary">OpenCart Automation Suite</span></a>
+</li>
+<li class="m-r-10">
+<a href="#"><span class="badge badge-primary">Mar 8, 2026 06:31:14 am</span></a>
+</li>
+</ul>
+</div>
+</div><div class="side-nav">
+<div class="side-nav-inner">
+<ul class="side-nav-menu">
+<li class="nav-item dropdown" onclick="toggleView('test-view')">
+<a id="nav-test" class="dropdown-toggle" href="#">
+<span class="ico"><i class="fa fa-list"></i></span>
+</a>
+</li>
+<li class="nav-item dropdown" onclick="toggleView('exception-view')">
+<a id="nav-exception" class="dropdown-toggle" href="#">
+<span class="ico"><i class="fa fa-bug"></i></span>
+</a>
+</li>
+<li class="nav-item dropdown" onclick="toggleView('category-view')">
+<a id="nav-category" class="dropdown-toggle" href="#">
+<span class="ico"><i class="fa fa-tag"></i></span>
+</a>
+</li>
+<li class="nav-item dropdown" onclick="toggleView('dashboard-view')">
+<a id="nav-dashboard" class="dropdown-toggle" href="#">
+<span class="ico"><i class="fa fa-bar-chart"></i></span>
+</a>
+</li>
+</ul>
+</div>
+</div>      <div class="vcontainer">
+        <div class="main-content">
+<div class="test-wrapper row view test-view">
+  <div class="test-list">
+    <div class="test-list-tools">
+<ul class="tools pull-left">
+<li><a href="#"><span class="font-size-14">Tests</span></a></li>
+</ul>
+<ul class="tools text-right">
+<li class="dropdown">
+<a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-exclamation-circle"></i></a>
+<ul id="status-toggle" class="dropdown-menu dropdown-md p-v-0">
+<a class="dropdown-item" status="fail" href="#"><span>Fail</span><span class="status danger"></span></a>
+<div class="dropdown-divider"></div>
+<a status="clear" class="dropdown-item" href="#"><span>Clear</span><span class="pull-right"><i class="fa fa-close"></i></span></a>
+</ul>
+</li>
+<li class="dropdown">
+<a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-tag"></i></a>
+<ul id="tag-toggle" class="dropdown-menu dropdown-md p-v-0">
+<a class="dropdown-item" href="#">@data</a><a class="dropdown-item" href="#">@register</a><a class="dropdown-item" href="#">@positive</a><a class="dropdown-item" href="#">@negative</a>
+</ul>
+</li>
+</ul>
+</div>    <div class="test-list-wrapper scrollable">
+      <ul class="test-list-item">
+        <li class="test-item"  status="fail" test-id="1"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">Login functionality</p>
+            <p class="text-sm">
+              <span>6:31:16 am</span> / <span>00:00:13:859</span>
+              <span class="badge fail-bg log float-right">Fail</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-fail">Login functionality</h5>
+<span class='badge badge-success'>03.08.2026 6:31:16 am</span>
+<span class='badge badge-danger'>03.08.2026 6:31:29 am</span>
+<span class='badge badge-default'>00:00:13:859</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=1</span>
+<span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
+<span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
+<span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
+</div>
+<div class="m-t-10 m-l-5"></div>
+</div>
+</div>
+<div class="accordion mt-4">
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="2"><span class="badge log fail-bg mr-2">Fail</span>Login with valid credentials</div>
+          <div class="status-avatar float-right mr-4">
+            <i class="fa fa-paperclip"></i>
+          </div>
+      </div>
+    </div>
+        <div class="">
+          <div class="card-body">
+              <div class="step fail-bg" title="stepdefinitions.LoginSteps.user_is_on_the_open_cart_login_page()">
+                <span>Given user is on the OpenCart login page</span>
+      <div>
+        <textarea disabled class="code-block">java.lang.NullPointerException: Cannot invoke "org.openqa.selenium.WebDriver.get(String)" because "this.driver" is null
+	at Pages.loginPage.openLoginPage(loginPage.java:43)
+	at stepdefinitions.LoginSteps.user_is_on_the_open_cart_login_page(LoginSteps.java:22)
+	at ✽.user is on the OpenCart login page(file:///D:/OpenCartAutomationProject/src/test/resources/features/Login.feature:5)
+</textarea>
+      
+      </div>
+              </div>
+              <div class="step pass-bg" title="AFTER_STEP">
+                <span>hooks.Hooks.afterStep(io.cucumber.java.Scenario)</span>
+      <div>FAILED STEP
+          <div class="row mb-3"><div class="col-md-3">
+    
+
+<img data-featherlight='test-output/embedded1.png' src="test-output/embedded1.png">
+  
+    
+
+    </div></div>
+</div>
+      <div>
+      </div>
+              </div>
+              <div class="step skip-bg" title="stepdefinitions.LoginSteps.user_enters_email_and_password(java.lang.String,java.lang.String)">
+                <span>When user enters email "VALID_EMAIL_HERE" and password "VALID_PASSWORD_HERE"</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" >
+                <span>And user clicks on Login button</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" >
+                <span>Then user should be redirected to My Account page</span>
+      <div>Step skipped
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="13"><span class="badge log fail-bg mr-2">Fail</span>Login with invalid credentials</div>
+          <div class="status-avatar float-right mr-4">
+            <i class="fa fa-paperclip"></i>
+          </div>
+      </div>
+    </div>
+        <div class="scenario_outline ">
+            <div class="card-body l1">
+              <div class="card-header">
+                <div class="card-title outline-child">
+                  <div class="node" id="14"><span class="badge log fail-bg mr-2">Fail</span>Login with invalid credentials</div>
+                    <div class="status-avatar float-right">
+                      <i class="fa fa-paperclip"></i>
+                    </div>
+                </div>
+              </div>
+              <div class="card-body mt-3 ">
+                  <div class="step fail-bg">
+                    <span>Given user is on the OpenCart login page</span>
+      <div>
+        <textarea disabled class="code-block">java.lang.NullPointerException: Cannot invoke "org.openqa.selenium.WebDriver.get(String)" because "this.driver" is null
+	at Pages.loginPage.openLoginPage(loginPage.java:43)
+	at stepdefinitions.LoginSteps.user_is_on_the_open_cart_login_page(LoginSteps.java:22)
+	at ✽.user is on the OpenCart login page(file:///D:/OpenCartAutomationProject/src/test/resources/features/Login.feature:12)
+</textarea>
+      
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>hooks.Hooks.afterStep(io.cucumber.java.Scenario)</span>
+      <div>FAILED STEP
+          <div class="row mb-3"><div class="col-md-3">
+    
+
+<img data-featherlight='test-output/embedded2.png' src="test-output/embedded2.png">
+  
+    
+
+    </div></div>
+</div>
+      <div>
+      </div>
+                  </div>
+                  <div class="step skip-bg">
+                    <span>When user enters email "invalid@test.com" and password "wrong123"</span>
+      <div>Step skipped
+      </div>
+                  </div>
+                  <div class="step skip-bg">
+                    <span>And user clicks on Login button</span>
+      <div>Step skipped
+      </div>
+                  </div>
+                  <div class="step skip-bg">
+                    <span>Then warning message should be displayed</span>
+      <div>Step skipped
+      </div>
+                  </div>
+              </div>
+            </div>
+            <div class="card-body l1">
+              <div class="card-header">
+                <div class="card-title outline-child">
+                  <div class="node" id="25"><span class="badge log fail-bg mr-2">Fail</span>Login with invalid credentials</div>
+                    <div class="status-avatar float-right">
+                      <i class="fa fa-paperclip"></i>
+                    </div>
+                </div>
+              </div>
+              <div class="card-body mt-3 ">
+                  <div class="step fail-bg">
+                    <span>Given user is on the OpenCart login page</span>
+      <div>
+        <textarea disabled class="code-block">java.lang.NullPointerException: Cannot invoke "org.openqa.selenium.WebDriver.get(String)" because "this.driver" is null
+	at Pages.loginPage.openLoginPage(loginPage.java:43)
+	at stepdefinitions.LoginSteps.user_is_on_the_open_cart_login_page(LoginSteps.java:22)
+	at ✽.user is on the OpenCart login page(file:///D:/OpenCartAutomationProject/src/test/resources/features/Login.feature:12)
+</textarea>
+      
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>hooks.Hooks.afterStep(io.cucumber.java.Scenario)</span>
+      <div>FAILED STEP
+          <div class="row mb-3"><div class="col-md-3">
+    
+
+<img data-featherlight='test-output/embedded3.png' src="test-output/embedded3.png">
+  
+    
+
+    </div></div>
+</div>
+      <div>
+      </div>
+                  </div>
+                  <div class="step skip-bg">
+                    <span>When user enters email "test" and password "pass"</span>
+      <div>Step skipped
+      </div>
+                  </div>
+                  <div class="step skip-bg">
+                    <span>And user clicks on Login button</span>
+      <div>Step skipped
+      </div>
+                  </div>
+                  <div class="step skip-bg">
+                    <span>Then warning message should be displayed</span>
+      <div>Step skipped
+      </div>
+                  </div>
+              </div>
+            </div>
+            <div class="card-body l1">
+              <div class="card-header">
+                <div class="card-title outline-child">
+                  <div class="node" id="36"><span class="badge log fail-bg mr-2">Fail</span>Login with invalid credentials</div>
+                    <div class="status-avatar float-right">
+                      <i class="fa fa-paperclip"></i>
+                    </div>
+                </div>
+              </div>
+              <div class="card-body mt-3 ">
+                  <div class="step fail-bg">
+                    <span>Given user is on the OpenCart login page</span>
+      <div>
+        <textarea disabled class="code-block">java.lang.NullPointerException: Cannot invoke "org.openqa.selenium.WebDriver.get(String)" because "this.driver" is null
+	at Pages.loginPage.openLoginPage(loginPage.java:43)
+	at stepdefinitions.LoginSteps.user_is_on_the_open_cart_login_page(LoginSteps.java:22)
+	at ✽.user is on the OpenCart login page(file:///D:/OpenCartAutomationProject/src/test/resources/features/Login.feature:12)
+</textarea>
+      
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>hooks.Hooks.afterStep(io.cucumber.java.Scenario)</span>
+      <div>FAILED STEP
+          <div class="row mb-3"><div class="col-md-3">
+    
+
+<img data-featherlight='test-output/embedded4.png' src="test-output/embedded4.png">
+  
+    
+
+    </div></div>
+</div>
+      <div>
+      </div>
+                  </div>
+                  <div class="step skip-bg">
+                    <span>When user enters email "" and password "pass123"</span>
+      <div>Step skipped
+      </div>
+                  </div>
+                  <div class="step skip-bg">
+                    <span>And user clicks on Login button</span>
+      <div>Step skipped
+      </div>
+                  </div>
+                  <div class="step skip-bg">
+                    <span>Then warning message should be displayed</span>
+      <div>Step skipped
+      </div>
+                  </div>
+              </div>
+            </div>
+            <div class="card-body l1">
+              <div class="card-header">
+                <div class="card-title outline-child">
+                  <div class="node" id="47"><span class="badge log fail-bg mr-2">Fail</span>Login with invalid credentials</div>
+                    <div class="status-avatar float-right">
+                      <i class="fa fa-paperclip"></i>
+                    </div>
+                </div>
+              </div>
+              <div class="card-body mt-3 ">
+                  <div class="step fail-bg">
+                    <span>Given user is on the OpenCart login page</span>
+      <div>
+        <textarea disabled class="code-block">java.lang.NullPointerException: Cannot invoke "org.openqa.selenium.WebDriver.get(String)" because "this.driver" is null
+	at Pages.loginPage.openLoginPage(loginPage.java:43)
+	at stepdefinitions.LoginSteps.user_is_on_the_open_cart_login_page(LoginSteps.java:22)
+	at ✽.user is on the OpenCart login page(file:///D:/OpenCartAutomationProject/src/test/resources/features/Login.feature:12)
+</textarea>
+      
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>hooks.Hooks.afterStep(io.cucumber.java.Scenario)</span>
+      <div>FAILED STEP
+          <div class="row mb-3"><div class="col-md-3">
+    
+
+<img data-featherlight='test-output/embedded5.png' src="test-output/embedded5.png">
+  
+    
+
+    </div></div>
+</div>
+      <div>
+      </div>
+                  </div>
+                  <div class="step skip-bg">
+                    <span>When user enters email "valid@test.com" and password ""</span>
+      <div>Step skipped
+      </div>
+                  </div>
+                  <div class="step skip-bg">
+                    <span>And user clicks on Login button</span>
+      <div>Step skipped
+      </div>
+                  </div>
+                  <div class="step skip-bg">
+                    <span>Then warning message should be displayed</span>
+      <div>Step skipped
+      </div>
+                  </div>
+              </div>
+            </div>
+            <div class="card-body l1">
+              <div class="card-header">
+                <div class="card-title outline-child">
+                  <div class="node" id="58"><span class="badge log fail-bg mr-2">Fail</span>Login with invalid credentials</div>
+                    <div class="status-avatar float-right">
+                      <i class="fa fa-paperclip"></i>
+                    </div>
+                </div>
+              </div>
+              <div class="card-body mt-3 ">
+                  <div class="step fail-bg">
+                    <span>Given user is on the OpenCart login page</span>
+      <div>
+        <textarea disabled class="code-block">java.lang.NullPointerException: Cannot invoke "org.openqa.selenium.WebDriver.get(String)" because "this.driver" is null
+	at Pages.loginPage.openLoginPage(loginPage.java:43)
+	at stepdefinitions.LoginSteps.user_is_on_the_open_cart_login_page(LoginSteps.java:22)
+	at ✽.user is on the OpenCart login page(file:///D:/OpenCartAutomationProject/src/test/resources/features/Login.feature:12)
+</textarea>
+      
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>hooks.Hooks.afterStep(io.cucumber.java.Scenario)</span>
+      <div>FAILED STEP
+          <div class="row mb-3"><div class="col-md-3">
+    
+
+<img data-featherlight='test-output/embedded6.png' src="test-output/embedded6.png">
+  
+    
+
+    </div></div>
+</div>
+      <div>
+      </div>
+                  </div>
+                  <div class="step skip-bg">
+                    <span>When user enters email "invalid-email" and password "wrong"</span>
+      <div>Step skipped
+      </div>
+                  </div>
+                  <div class="step skip-bg">
+                    <span>And user clicks on Login button</span>
+      <div>Step skipped
+      </div>
+                  </div>
+                  <div class="step skip-bg">
+                    <span>Then warning message should be displayed</span>
+      <div>Step skipped
+      </div>
+                  </div>
+              </div>
+            </div>
+        </div>
+  </div>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="fail" test-id="69"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">Register Account</p>
+            <p class="text-sm">
+              <span>6:31:29 am</span> / <span>00:00:05:897</span>
+              <span class="badge fail-bg log float-right">Fail</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-fail">Register Account</h5>
+<span class='badge badge-success'>03.08.2026 6:31:29 am</span>
+<span class='badge badge-danger'>03.08.2026 6:31:35 am</span>
+<span class='badge badge-default'>00:00:05:897</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=69</span>
+<span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
+<span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
+<span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
+</div>
+<div class="m-t-10 m-l-5"></div>
+</div>
+</div>
+<div class="accordion mt-4">
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="70"><span class="badge log fail-bg mr-2">Fail</span>Register with valid data</div>
+          <div class="status-avatar float-right mr-4">
+            <i class="fa fa-paperclip"></i>
+          </div>
+      </div>
+    </div>
+        <div class="scenario_outline ">
+            <div class="card-body l1">
+              <div class="card-header">
+                <div class="card-title outline-child">
+                  <div class="node" id="71"><span class="badge log fail-bg mr-2">Fail</span>Register with valid data</div>
+                    <div class="status-avatar float-right">
+                      <i class="fa fa-paperclip"></i>
+                    </div>
+                </div>
+              </div>
+              <div class="card-body mt-3 ">
+                  <div class="step fail-bg">
+                    <span>Given user is on register page</span>
+      <div>
+        <textarea disabled class="code-block">java.lang.NullPointerException: Cannot invoke "org.openqa.selenium.WebDriver.get(String)" because "this.driver" is null
+	at Pages.RegisterPage.openRegisterPage(RegisterPage.java:62)
+	at stepdefinitions.RegisterSteps.user_is_on_register_page(RegisterSteps.java:25)
+	at ✽.user is on register page(file:///D:/OpenCartAutomationProject/src/test/resources/features/RegisterAccount.feature:4)
+</textarea>
+      
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>hooks.Hooks.afterStep(io.cucumber.java.Scenario)</span>
+      <div>FAILED STEP
+          <div class="row mb-3"><div class="col-md-3">
+    
+
+<img data-featherlight='test-output/embedded7.png' src="test-output/embedded7.png">
+  
+    
+
+    </div></div>
+</div>
+      <div>
+      </div>
+                  </div>
+                  <div class="step skip-bg">
+                    <span>When user enters registration details</span>
+      <div><table class='markup-table table '><tr><td>firstName</td><td>Sneha</td></tr><tr><td>lastName</td><td>Sahu</td></tr><tr><td>email</td><td>sneha123@test.com</td></tr><tr><td>telephone</td><td>9876543210</td></tr><tr><td>password</td><td>Test@123</td></tr><tr><td>confirmPassword</td><td>Test@123</td></tr></table>
+      </div>
+      <div>Step skipped
+      </div>
+                  </div>
+                  <div class="step skip-bg">
+                    <span>Then user should register successfully</span>
+      <div>Step skipped
+      </div>
+                  </div>
+              </div>
+            </div>
+            <div class="card-body l1">
+              <div class="card-header">
+                <div class="card-title outline-child">
+                  <div class="node" id="80"><span class="badge log fail-bg mr-2">Fail</span>Register with valid data</div>
+                    <div class="status-avatar float-right">
+                      <i class="fa fa-paperclip"></i>
+                    </div>
+                </div>
+              </div>
+              <div class="card-body mt-3 ">
+                  <div class="step fail-bg">
+                    <span>Given user is on register page</span>
+      <div>
+        <textarea disabled class="code-block">java.lang.NullPointerException: Cannot invoke "org.openqa.selenium.WebDriver.get(String)" because "this.driver" is null
+	at Pages.RegisterPage.openRegisterPage(RegisterPage.java:62)
+	at stepdefinitions.RegisterSteps.user_is_on_register_page(RegisterSteps.java:25)
+	at ✽.user is on register page(file:///D:/OpenCartAutomationProject/src/test/resources/features/RegisterAccount.feature:4)
+</textarea>
+      
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>hooks.Hooks.afterStep(io.cucumber.java.Scenario)</span>
+      <div>FAILED STEP
+          <div class="row mb-3"><div class="col-md-3">
+    
+
+<img data-featherlight='test-output/embedded8.png' src="test-output/embedded8.png">
+  
+    
+
+    </div></div>
+</div>
+      <div>
+      </div>
+                  </div>
+                  <div class="step skip-bg">
+                    <span>When user enters registration details</span>
+      <div><table class='markup-table table '><tr><td>firstName</td><td>John</td></tr><tr><td>lastName</td><td>Doe</td></tr><tr><td>email</td><td>john@test.com</td></tr><tr><td>telephone</td><td>1234567890</td></tr><tr><td>password</td><td>Pass@123</td></tr><tr><td>confirmPassword</td><td>Pass@123</td></tr></table>
+      </div>
+      <div>Step skipped
+      </div>
+                  </div>
+                  <div class="step skip-bg">
+                    <span>Then user should register successfully</span>
+      <div>Step skipped
+      </div>
+                  </div>
+              </div>
+            </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="89"><span class="badge log fail-bg mr-2">Fail</span>Register with duplicate email</div>
+          <div class="status-avatar float-right mr-4">
+            <i class="fa fa-paperclip"></i>
+          </div>
+      </div>
+    </div>
+        <div class="scenario_outline ">
+            <div class="card-body l1">
+              <div class="card-header">
+                <div class="card-title outline-child">
+                  <div class="node" id="90"><span class="badge log fail-bg mr-2">Fail</span>Register with duplicate email</div>
+                    <div class="status-avatar float-right">
+                      <i class="fa fa-paperclip"></i>
+                    </div>
+                </div>
+              </div>
+              <div class="card-body mt-3 ">
+                  <div class="step fail-bg">
+                    <span>Given user is on register page</span>
+      <div>
+        <textarea disabled class="code-block">java.lang.NullPointerException: Cannot invoke "org.openqa.selenium.WebDriver.get(String)" because "this.driver" is null
+	at Pages.RegisterPage.openRegisterPage(RegisterPage.java:62)
+	at stepdefinitions.RegisterSteps.user_is_on_register_page(RegisterSteps.java:25)
+	at ✽.user is on register page(file:///D:/OpenCartAutomationProject/src/test/resources/features/RegisterAccount.feature:21)
+</textarea>
+      
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>hooks.Hooks.afterStep(io.cucumber.java.Scenario)</span>
+      <div>FAILED STEP
+          <div class="row mb-3"><div class="col-md-3">
+    
+
+<img data-featherlight='test-output/embedded9.png' src="test-output/embedded9.png">
+  
+    
+
+    </div></div>
+</div>
+      <div>
+      </div>
+                  </div>
+                  <div class="step skip-bg">
+                    <span>When user enters registration details</span>
+      <div><table class='markup-table table '><tr><td>firstName</td><td>Sneha</td></tr><tr><td>lastName</td><td>Sahu</td></tr><tr><td>email</td><td>sneha@test.com</td></tr><tr><td>telephone</td><td>9876543210</td></tr><tr><td>password</td><td>Test@123</td></tr><tr><td>confirmPassword</td><td>Test@123</td></tr></table>
+      </div>
+      <div>Step skipped
+      </div>
+                  </div>
+                  <div class="step skip-bg">
+                    <span>Then duplicate email error should be displayed</span>
+      <div>Step skipped
+      </div>
+                  </div>
+              </div>
+            </div>
+        </div>
+  </div>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="fail" test-id="99"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">Add to Cart functionality</p>
+            <p class="text-sm">
+              <span>6:31:35 am</span> / <span>00:00:01:894</span>
+              <span class="badge fail-bg log float-right">Fail</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-fail">Add to Cart functionality</h5>
+<span class='badge badge-success'>03.08.2026 6:31:35 am</span>
+<span class='badge badge-danger'>03.08.2026 6:31:37 am</span>
+<span class='badge badge-default'>00:00:01:894</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=99</span>
+<span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
+<span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
+<span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
+</div>
+<div class="m-t-10 m-l-5"> As a customer
+I want to add product to cart
+So that I can purchase it later</div>
+</div>
+</div>
+<div class="accordion mt-4">
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="100"><span class="badge log fail-bg mr-2">Fail</span>Add product to cart successfully</div>
+          <div class="status-avatar float-right mr-4">
+            <i class="fa fa-paperclip"></i>
+          </div>
+      </div>
+    </div>
+        <div class="">
+          <div class="card-body">
+              <div class="step fail-bg" title="stepdefinitions.AddToCartSteps.user_is_on_the_open_cart_home_page()">
+                <span>Given user is on the OpenCart home page</span>
+      <div>
+        <textarea disabled class="code-block">java.lang.NullPointerException: Cannot invoke "org.openqa.selenium.WebDriver.get(String)" because "this.driver" is null
+	at stepdefinitions.AddToCartSteps.user_is_on_the_open_cart_home_page(AddToCartSteps.java:26)
+	at ✽.user is on the OpenCart home page(file:///D:/OpenCartAutomationProject/src/test/resources/features/addToCart.feature:9)
+</textarea>
+      
+      </div>
+              </div>
+              <div class="step pass-bg" title="AFTER_STEP">
+                <span>hooks.Hooks.afterStep(io.cucumber.java.Scenario)</span>
+      <div>FAILED STEP
+          <div class="row mb-3"><div class="col-md-3">
+    
+
+<img data-featherlight='test-output/embedded10.png' src="test-output/embedded10.png">
+  
+    
+
+    </div></div>
+</div>
+      <div>
+      </div>
+              </div>
+              <div class="step skip-bg" title="stepdefinitions.AddToCartSteps.user_searches_for_product(java.lang.String)">
+                <span>When user searches for product "MacBook"</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="stepdefinitions.AddToCartSteps.user_selects_the_product()">
+                <span>And user selects the product</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="stepdefinitions.AddToCartSteps.user_clicks_add_to_cart_button()">
+                <span>And user clicks Add to Cart button</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="stepdefinitions.AddToCartSteps.product_should_be_added_to_the_cart_successfully()">
+                <span>Then product should be added to the cart successfully</span>
+      <div>Step skipped
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="fail" test-id="113"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">Checkout functionality</p>
+            <p class="text-sm">
+              <span>6:31:37 am</span> / <span>00:00:01:851</span>
+              <span class="badge fail-bg log float-right">Fail</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-fail">Checkout functionality</h5>
+<span class='badge badge-success'>03.08.2026 6:31:37 am</span>
+<span class='badge badge-danger'>03.08.2026 6:31:39 am</span>
+<span class='badge badge-default'>00:00:01:851</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=113</span>
+<span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
+<span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
+<span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
+</div>
+<div class="m-t-10 m-l-5"> As a customer
+I want to proceed to checkout
+So that I can purchase the product</div>
+</div>
+</div>
+<div class="accordion mt-4">
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="114"><span class="badge log fail-bg mr-2">Fail</span>Proceed to checkout successfully</div>
+          <div class="status-avatar float-right mr-4">
+            <i class="fa fa-paperclip"></i>
+          </div>
+      </div>
+    </div>
+        <div class="">
+          <div class="card-body">
+              <div class="step pass-bg" title="stepdefinitions.CheckoutSteps.user_proceeds_to_checkout()">
+                <span>When user proceeds to checkout</span>
+      <div>
+      </div>
+              </div>
+              <div class="step fail-bg" title="stepdefinitions.CheckoutSteps.checkout_page_should_be_displayed()">
+                <span>Then checkout page should be displayed</span>
+      <div>
+        <textarea disabled class="code-block">java.lang.AssertionError: Checkout page not displayed - header missing expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.failNotEquals(Assert.java:1590)
+	at org.testng.Assert.assertTrue(Assert.java:57)
+	at stepdefinitions.CheckoutSteps.checkout_page_should_be_displayed(CheckoutSteps.java:28)
+	at ✽.checkout page should be displayed(file:///D:/OpenCartAutomationProject/src/test/resources/features/checkout.feature:11)
+</textarea>
+      
+      </div>
+              </div>
+              <div class="step pass-bg" title="AFTER_STEP">
+                <span>hooks.Hooks.afterStep(io.cucumber.java.Scenario)</span>
+      <div>FAILED STEP
+          <div class="row mb-3"><div class="col-md-3">
+    
+
+<img data-featherlight='test-output/embedded11.png' src="test-output/embedded11.png">
+  
+    
+
+    </div></div>
+</div>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="fail" test-id="121"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">Contact Us functionality</p>
+            <p class="text-sm">
+              <span>6:31:39 am</span> / <span>00:00:01:978</span>
+              <span class="badge fail-bg log float-right">Fail</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-fail">Contact Us functionality</h5>
+<span class='badge badge-success'>03.08.2026 6:31:39 am</span>
+<span class='badge badge-danger'>03.08.2026 6:31:41 am</span>
+<span class='badge badge-default'>00:00:01:978</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=121</span>
+<span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
+<span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
+<span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
+</div>
+<div class="m-t-10 m-l-5"> As a user
+I want to send enquiry
+So that admin can respond</div>
+</div>
+</div>
+<div class="accordion mt-4">
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="122"><span class="badge log fail-bg mr-2">Fail</span>Submit contact enquiry</div>
+          <div class="status-avatar float-right mr-4">
+            <i class="fa fa-paperclip"></i>
+          </div>
+      </div>
+    </div>
+        <div class="">
+          <div class="card-body">
+              <div class="step fail-bg" title="stepdefinitions.ContactUsSteps.user_navigates_to_contact_us_page()">
+                <span>Given user navigates to Contact Us page</span>
+      <div>
+        <textarea disabled class="code-block">java.lang.NullPointerException: Cannot invoke "org.openqa.selenium.SearchContext.findElement(org.openqa.selenium.By)" because "this.searchContext" is null
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at jdk.proxy2/jdk.proxy2.$Proxy27.isDisplayed(Unknown Source)
+	at org.openqa.selenium.support.ui.ExpectedConditions$23.apply(ExpectedConditions.java:793)
+	at org.openqa.selenium.support.ui.ExpectedConditions$23.apply(ExpectedConditions.java:786)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:209)
+	at Pages.Contactuspage.navigateToContactUs(Contactuspage.java:45)
+	at stepdefinitions.ContactUsSteps.user_navigates_to_contact_us_page(ContactUsSteps.java:28)
+	at ✽.user navigates to Contact Us page(file:///D:/OpenCartAutomationProject/src/test/resources/features/contactUs.feature:9)
+</textarea>
+      
+      </div>
+              </div>
+              <div class="step pass-bg" title="AFTER_STEP">
+                <span>hooks.Hooks.afterStep(io.cucumber.java.Scenario)</span>
+      <div>FAILED STEP
+          <div class="row mb-3"><div class="col-md-3">
+    
+
+<img data-featherlight='test-output/embedded12.png' src="test-output/embedded12.png">
+  
+    
+
+    </div></div>
+</div>
+      <div>
+      </div>
+              </div>
+              <div class="step skip-bg" title="stepdefinitions.ContactUsSteps.user_enters_name_email_and_enquiry(java.lang.String,java.lang.String,java.lang.String)">
+                <span>When user enters name "Sneha" email "sneha@gmail.com" and enquiry "Test enquiry message"</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="stepdefinitions.ContactUsSteps.user_clicks_submit_button()">
+                <span>And user clicks submit button</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="stepdefinitions.ContactUsSteps.contact_enquiry_should_be_submitted_successfully()">
+                <span>Then contact enquiry should be submitted successfully</span>
+      <div>Step skipped
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="fail" test-id="133"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">Forgot Password functionality</p>
+            <p class="text-sm">
+              <span>6:31:41 am</span> / <span>00:00:01:859</span>
+              <span class="badge fail-bg log float-right">Fail</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-fail">Forgot Password functionality</h5>
+<span class='badge badge-success'>03.08.2026 6:31:41 am</span>
+<span class='badge badge-danger'>03.08.2026 6:31:43 am</span>
+<span class='badge badge-default'>00:00:01:859</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=133</span>
+<span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
+<span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
+<span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
+</div>
+<div class="m-t-10 m-l-5"></div>
+</div>
+</div>
+<div class="accordion mt-4">
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="134"><span class="badge log fail-bg mr-2">Fail</span>Request password reset</div>
+          <div class="status-avatar float-right mr-4">
+            <i class="fa fa-paperclip"></i>
+          </div>
+      </div>
+    </div>
+        <div class="">
+          <div class="card-body">
+              <div class="step fail-bg" title="stepdefinitions.ForgotPasswordSteps.user_clicks_forgotten_password_link()">
+                <span>When user clicks forgotten password link</span>
+      <div>
+        <textarea disabled class="code-block">java.lang.NullPointerException: Cannot invoke "org.openqa.selenium.SearchContext.findElement(org.openqa.selenium.By)" because "this.searchContext" is null
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at jdk.proxy2/jdk.proxy2.$Proxy27.isDisplayed(Unknown Source)
+	at org.openqa.selenium.support.ui.ExpectedConditions$23.apply(ExpectedConditions.java:793)
+	at org.openqa.selenium.support.ui.ExpectedConditions$23.apply(ExpectedConditions.java:786)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:209)
+	at Pages.ForgotPasswordPage.clickForgottenPasswordLink(ForgotPasswordPage.java:38)
+	at stepdefinitions.ForgotPasswordSteps.user_clicks_forgotten_password_link(ForgotPasswordSteps.java:30)
+	at ✽.user clicks forgotten password link(file:///D:/OpenCartAutomationProject/src/test/resources/features/forgetPassword.feature:5)
+</textarea>
+      
+      </div>
+              </div>
+              <div class="step pass-bg" title="AFTER_STEP">
+                <span>hooks.Hooks.afterStep(io.cucumber.java.Scenario)</span>
+      <div>FAILED STEP
+          <div class="row mb-3"><div class="col-md-3">
+    
+
+<img data-featherlight='test-output/embedded13.png' src="test-output/embedded13.png">
+  
+    
+
+    </div></div>
+</div>
+      <div>
+      </div>
+              </div>
+              <div class="step skip-bg" title="stepdefinitions.ForgotPasswordSteps.user_enters_email(java.lang.String)">
+                <span>And user enters email "test@gmail.com"</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="stepdefinitions.ForgotPasswordSteps.password_reset_confirmation_should_be_displayed()">
+                <span>Then password reset confirmation should be displayed</span>
+      <div>Step skipped
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="fail" test-id="143"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">Logout functionality</p>
+            <p class="text-sm">
+              <span>6:31:43 am</span> / <span>00:00:01:269</span>
+              <span class="badge fail-bg log float-right">Fail</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-fail">Logout functionality</h5>
+<span class='badge badge-success'>03.08.2026 6:31:43 am</span>
+<span class='badge badge-danger'>03.08.2026 6:31:44 am</span>
+<span class='badge badge-default'>00:00:01:269</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=143</span>
+<span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
+<span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
+<span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
+</div>
+<div class="m-t-10 m-l-5"></div>
+</div>
+</div>
+<div class="accordion mt-4">
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="144"><span class="badge log fail-bg mr-2">Fail</span>Logout successfully</div>
+      </div>
+    </div>
+        <div class="">
+          <div class="card-body">
+              <div class="step fail-bg" >
+                <span>Given user is logged into the application</span>
+      <div>Step undefined
+      </div>
+              </div>
+              <div class="step skip-bg" title="stepdefinitions.LogoutSteps.user_clicks_logout_link()">
+                <span>When user clicks logout link</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" >
+                <span>Then logout confirmation page should appear</span>
+      <div>Step skipped
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="fail" test-id="153"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">Product comparison</p>
+            <p class="text-sm">
+              <span>6:31:44 am</span> / <span>00:00:01:890</span>
+              <span class="badge fail-bg log float-right">Fail</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-fail">Product comparison</h5>
+<span class='badge badge-success'>03.08.2026 6:31:44 am</span>
+<span class='badge badge-danger'>03.08.2026 6:31:46 am</span>
+<span class='badge badge-default'>00:00:01:890</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=153</span>
+<span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
+<span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
+<span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
+</div>
+<div class="m-t-10 m-l-5"></div>
+</div>
+</div>
+<div class="accordion mt-4">
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="154"><span class="badge log fail-bg mr-2">Fail</span>Compare two products</div>
+          <div class="status-avatar float-right mr-4">
+            <i class="fa fa-paperclip"></i>
+          </div>
+      </div>
+    </div>
+        <div class="">
+          <div class="card-body">
+              <div class="step fail-bg" title="stepdefinitions.ProductComparisonSteps.user_adds_product_to_comparison_list()">
+                <span>When user adds product to comparison list</span>
+      <div>
+        <textarea disabled class="code-block">java.lang.NullPointerException: Cannot invoke "org.openqa.selenium.SearchContext.findElement(org.openqa.selenium.By)" because "this.searchContext" is null
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at jdk.proxy2/jdk.proxy2.$Proxy27.isDisplayed(Unknown Source)
+	at org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:365)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:351)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:348)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:209)
+	at Pages.HomePage.searchProduct(HomePage.java:54)
+	at stepdefinitions.ProductComparisonSteps.user_adds_product_to_comparison_list(ProductComparisonSteps.java:37)
+	at ✽.user adds product to comparison list(file:///D:/OpenCartAutomationProject/src/test/resources/features/productComparison.feature:6)
+</textarea>
+      
+      </div>
+              </div>
+              <div class="step pass-bg" title="AFTER_STEP">
+                <span>hooks.Hooks.afterStep(io.cucumber.java.Scenario)</span>
+      <div>FAILED STEP
+          <div class="row mb-3"><div class="col-md-3">
+    
+
+<img data-featherlight='test-output/embedded14.png' src="test-output/embedded14.png">
+  
+    
+
+    </div></div>
+</div>
+      <div>
+      </div>
+              </div>
+              <div class="step skip-bg" title="stepdefinitions.ProductComparisonSteps.comparison_page_should_be_displayed()">
+                <span>Then comparison page should be displayed</span>
+      <div>Step skipped
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="fail" test-id="161"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">Remove product from cart</p>
+            <p class="text-sm">
+              <span>6:31:46 am</span> / <span>00:00:01:894</span>
+              <span class="badge fail-bg log float-right">Fail</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-fail">Remove product from cart</h5>
+<span class='badge badge-success'>03.08.2026 6:31:46 am</span>
+<span class='badge badge-danger'>03.08.2026 6:31:48 am</span>
+<span class='badge badge-default'>00:00:01:894</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=161</span>
+<span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
+<span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
+<span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
+</div>
+<div class="m-t-10 m-l-5"> As a customer
+I want to remove product from shopping cart
+So that I can update my cart items</div>
+</div>
+</div>
+<div class="accordion mt-4">
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="162"><span class="badge log fail-bg mr-2">Fail</span>Remove product successfully from cart</div>
+          <div class="status-avatar float-right mr-4">
+            <i class="fa fa-paperclip"></i>
+          </div>
+      </div>
+    </div>
+        <div class="">
+          <div class="card-body">
+              <div class="step fail-bg" title="stepdefinitions.RemoveCartSteps.user_removes_product_from_cart()">
+                <span>When user removes product from cart</span>
+      <div>
+        <textarea disabled class="code-block">java.lang.NullPointerException: Cannot invoke "Pages.HomePage.searchProduct(String)" because "this.homePage" is null
+	at stepdefinitions.RemoveCartSteps.user_removes_product_from_cart(RemoveCartSteps.java:36)
+	at ✽.user removes product from cart(file:///D:/OpenCartAutomationProject/src/test/resources/features/removeFromCart.feature:10)
+</textarea>
+      
+      </div>
+              </div>
+              <div class="step pass-bg" title="AFTER_STEP">
+                <span>hooks.Hooks.afterStep(io.cucumber.java.Scenario)</span>
+      <div>FAILED STEP
+          <div class="row mb-3"><div class="col-md-3">
+    
+
+<img data-featherlight='test-output/embedded15.png' src="test-output/embedded15.png">
+  
+    
+
+    </div></div>
+</div>
+      <div>
+      </div>
+              </div>
+              <div class="step skip-bg" title="stepdefinitions.RemoveCartSteps.cart_should_be_empty()">
+                <span>Then cart should be empty</span>
+      <div>Step skipped
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="fail" test-id="169"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">Product Search</p>
+            <p class="text-sm">
+              <span>6:31:48 am</span> / <span>00:00:01:959</span>
+              <span class="badge fail-bg log float-right">Fail</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-fail">Product Search</h5>
+<span class='badge badge-success'>03.08.2026 6:31:48 am</span>
+<span class='badge badge-danger'>03.08.2026 6:31:50 am</span>
+<span class='badge badge-default'>00:00:01:959</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=169</span>
+<span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
+<span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
+<span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
+</div>
+<div class="m-t-10 m-l-5"></div>
+</div>
+</div>
+<div class="accordion mt-4">
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="170"><span class="badge log fail-bg mr-2">Fail</span>Search product successfully</div>
+          <div class="status-avatar float-right mr-4">
+            <i class="fa fa-paperclip"></i>
+          </div>
+      </div>
+    </div>
+        <div class="">
+          <div class="card-body">
+              <div class="step fail-bg" title="stepdefinitions.SearchSteps.user_searches_product(java.lang.String)">
+                <span>When user searches product "MacBook"</span>
+      <div>
+        <textarea disabled class="code-block">java.lang.NullPointerException: Cannot invoke "org.openqa.selenium.SearchContext.findElement(org.openqa.selenium.By)" because "this.searchContext" is null
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at jdk.proxy2/jdk.proxy2.$Proxy27.isDisplayed(Unknown Source)
+	at org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:365)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:351)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:348)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:209)
+	at Pages.HomePage.searchProduct(HomePage.java:54)
+	at stepdefinitions.SearchSteps.user_searches_product(SearchSteps.java:37)
+	at ✽.user searches product "MacBook"(file:///D:/OpenCartAutomationProject/src/test/resources/features/search.feature:6)
+</textarea>
+      
+      </div>
+              </div>
+              <div class="step pass-bg" title="AFTER_STEP">
+                <span>hooks.Hooks.afterStep(io.cucumber.java.Scenario)</span>
+      <div>FAILED STEP
+          <div class="row mb-3"><div class="col-md-3">
+    
+
+<img data-featherlight='test-output/embedded16.png' src="test-output/embedded16.png">
+  
+    
+
+    </div></div>
+</div>
+      <div>
+      </div>
+              </div>
+              <div class="step skip-bg" title="stepdefinitions.SearchSteps.user_clicks_searched_product()">
+                <span>And user clicks searched product</span>
+      <div>Step skipped
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="fail" test-id="177"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">Wishlist functionality</p>
+            <p class="text-sm">
+              <span>6:31:50 am</span> / <span>00:00:01:232</span>
+              <span class="badge fail-bg log float-right">Fail</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-fail">Wishlist functionality</h5>
+<span class='badge badge-success'>03.08.2026 6:31:50 am</span>
+<span class='badge badge-danger'>03.08.2026 6:31:51 am</span>
+<span class='badge badge-default'>00:00:01:232</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=177</span>
+<span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
+<span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
+<span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
+</div>
+<div class="m-t-10 m-l-5"></div>
+</div>
+</div>
+<div class="accordion mt-4">
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="178"><span class="badge log fail-bg mr-2">Fail</span>Add product to wishlist</div>
+      </div>
+    </div>
+        <div class="">
+          <div class="card-body">
+              <div class="step fail-bg" >
+                <span>Given user is logged in</span>
+      <div>Step undefined
+      </div>
+              </div>
+              <div class="step skip-bg" title="stepdefinitions.WishlistSteps.user_adds_product_to_wishlist()">
+                <span>When user adds product to wishlist</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" >
+                <span>Then wishlist page should be displayed</span>
+      <div>Step skipped
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+</div>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+<div class="test-content scrollable">
+<div class="test-content-tools">
+<ul><li><a class="back-to-test" href="#"><i class="fa fa-arrow-left"></i></a></li></ul>
+</div>
+<div class="test-content-detail"><div class="detail-body"></div></div>
+</div></div>
+<div class="test-wrapper row view exception-view attributes-view">
+<div class="test-list">
+<div class="test-list-tools">
+<ul class="tools pull-left"><li><a href=""><span class="font-size-14">Exception</span></a></li></ul>
+<ul class="tools text-right"><li><a href="#"><span class="badge badge-primary">2</span></a></li></ul>
+</div>
+<div class="test-list-wrapper scrollable">
+<ul class="test-list-item">
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log badge-danger'>1</span>
+</span>
+<p class="name">java.lang.AssertionError</p>
+<p class="duration text-sm">1 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>java.lang.AssertionError</h4>
+<span status="fail" class='badge log badge-danger'>1 failed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>06:31:38 am</td>
+<td>
+<a href="#" class="linked" test-id='113' id='118'>Then checkout page should be displayed</a>
+<div class="">
+<span class="badge badge-default">Checkout functionality.Proceed to checkout successfully.Then checkout page should be displayed</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log badge-danger'>15</span>
+</span>
+<p class="name">java.lang.NullPointerException</p>
+<p class="duration text-sm">15 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>java.lang.NullPointerException</h4>
+<span status="fail" class='badge log badge-danger'>15 failed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>06:31:19 am</td>
+<td>
+<a href="#" class="linked" test-id='1' id='4'>Given user is on the OpenCart login page</a>
+<div class="">
+<span class="badge badge-default">Login functionality.Login with valid credentials.Given user is on the OpenCart login page</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>06:31:20 am</td>
+<td>
+<a href="#" class="linked" test-id='1' id='16'>Given user is on the OpenCart login page</a>
+<div class="">
+<span class="badge badge-default">Login functionality.Login with invalid credentials.Given user is on the OpenCart login page</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>06:31:22 am</td>
+<td>
+<a href="#" class="linked" test-id='1' id='27'>Given user is on the OpenCart login page</a>
+<div class="">
+<span class="badge badge-default">Login functionality.Login with invalid credentials.Given user is on the OpenCart login page</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>06:31:24 am</td>
+<td>
+<a href="#" class="linked" test-id='1' id='38'>Given user is on the OpenCart login page</a>
+<div class="">
+<span class="badge badge-default">Login functionality.Login with invalid credentials.Given user is on the OpenCart login page</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>06:31:27 am</td>
+<td>
+<a href="#" class="linked" test-id='1' id='49'>Given user is on the OpenCart login page</a>
+<div class="">
+<span class="badge badge-default">Login functionality.Login with invalid credentials.Given user is on the OpenCart login page</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>06:31:29 am</td>
+<td>
+<a href="#" class="linked" test-id='1' id='60'>Given user is on the OpenCart login page</a>
+<div class="">
+<span class="badge badge-default">Login functionality.Login with invalid credentials.Given user is on the OpenCart login page</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>06:31:31 am</td>
+<td>
+<a href="#" class="linked" test-id='69' id='73'>Given user is on register page</a>
+<div class="">
+<span class="badge badge-default">Register Account.Register with valid data.Given user is on register page</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>06:31:32 am</td>
+<td>
+<a href="#" class="linked" test-id='69' id='82'>Given user is on register page</a>
+<div class="">
+<span class="badge badge-default">Register Account.Register with valid data.Given user is on register page</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>06:31:34 am</td>
+<td>
+<a href="#" class="linked" test-id='69' id='92'>Given user is on register page</a>
+<div class="">
+<span class="badge badge-default">Register Account.Register with duplicate email.Given user is on register page</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>06:31:36 am</td>
+<td>
+<a href="#" class="linked" test-id='99' id='102'>Given user is on the OpenCart home page</a>
+<div class="">
+<span class="badge badge-default">Add to Cart functionality.Add product to cart successfully.Given user is on the OpenCart home page</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>06:31:40 am</td>
+<td>
+<a href="#" class="linked" test-id='121' id='124'>Given user navigates to Contact Us page</a>
+<div class="">
+<span class="badge badge-default">Contact Us functionality.Submit contact enquiry.Given user navigates to Contact Us page</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>06:31:42 am</td>
+<td>
+<a href="#" class="linked" test-id='133' id='136'>When user clicks forgotten password link</a>
+<div class="">
+<span class="badge badge-default">Forgot Password functionality.Request password reset.When user clicks forgotten password link</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>06:31:45 am</td>
+<td>
+<a href="#" class="linked" test-id='153' id='156'>When user adds product to comparison list</a>
+<div class="">
+<span class="badge badge-default">Product comparison.Compare two products.When user adds product to comparison list</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>06:31:47 am</td>
+<td>
+<a href="#" class="linked" test-id='161' id='164'>When user removes product from cart</a>
+<div class="">
+<span class="badge badge-default">Remove product from cart.Remove product successfully from cart.When user removes product from cart</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>06:31:49 am</td>
+<td>
+<a href="#" class="linked" test-id='169' id='172'>When user searches product "MacBook"</a>
+<div class="">
+<span class="badge badge-default">Product Search.Search product successfully.When user searches product "MacBook"</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+</ul>
+</div>
+</div>
+<div class="test-content scrollable">
+<div class="test-content-detail">
+<div class="detail-body"></div>
+</div>
+</div>
+</div><div class="test-wrapper row view category-view attributes-view">
+<div class="test-list">
+<div class="test-list-tools">
+<ul class="tools pull-left"><li><a href=""><span class="font-size-14">Category</span></a></li></ul>
+<ul class="tools text-right"><li><a href="#"><span class="badge badge-primary">4</span></a></li></ul>
+</div>
+<div class="test-list-wrapper scrollable">
+<ul class="test-list-item">
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log badge-danger'>5</span>
+</span>
+<p class="name">@data</p>
+<p class="duration text-sm">5 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@data</h4>
+<span status="fail" class='badge log badge-danger'>5 failed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>06:31:19 am</td>
+<td>
+<a href="#" class="linked" test-id='1' id='14'>Login with invalid credentials</a>
+<div class="">
+<span class="badge badge-default">Login functionality.Login with invalid credentials</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>06:31:21 am</td>
+<td>
+<a href="#" class="linked" test-id='1' id='25'>Login with invalid credentials</a>
+<div class="">
+<span class="badge badge-default">Login functionality.Login with invalid credentials</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>06:31:23 am</td>
+<td>
+<a href="#" class="linked" test-id='1' id='36'>Login with invalid credentials</a>
+<div class="">
+<span class="badge badge-default">Login functionality.Login with invalid credentials</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>06:31:25 am</td>
+<td>
+<a href="#" class="linked" test-id='1' id='47'>Login with invalid credentials</a>
+<div class="">
+<span class="badge badge-default">Login functionality.Login with invalid credentials</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>06:31:28 am</td>
+<td>
+<a href="#" class="linked" test-id='1' id='58'>Login with invalid credentials</a>
+<div class="">
+<span class="badge badge-default">Login functionality.Login with invalid credentials</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log badge-danger'>3</span>
+</span>
+<p class="name">@register</p>
+<p class="duration text-sm">3 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@register</h4>
+<span status="fail" class='badge log badge-danger'>3 failed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>06:31:29 am</td>
+<td>
+<a href="#" class="linked" test-id='69' id='71'>Register with valid data</a>
+<div class="">
+<span class="badge badge-default">Register Account.Register with valid data</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>06:31:31 am</td>
+<td>
+<a href="#" class="linked" test-id='69' id='80'>Register with valid data</a>
+<div class="">
+<span class="badge badge-default">Register Account.Register with valid data</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>06:31:33 am</td>
+<td>
+<a href="#" class="linked" test-id='69' id='90'>Register with duplicate email</a>
+<div class="">
+<span class="badge badge-default">Register Account.Register with duplicate email</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log badge-danger'>3</span>
+</span>
+<p class="name">@positive</p>
+<p class="duration text-sm">3 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@positive</h4>
+<span status="fail" class='badge log badge-danger'>3 failed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>06:31:16 am</td>
+<td>
+<a href="#" class="linked" test-id='1' id='2'>Login with valid credentials</a>
+<div class="">
+<span class="badge badge-default">Login functionality.Login with valid credentials</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>06:31:29 am</td>
+<td>
+<a href="#" class="linked" test-id='69' id='71'>Register with valid data</a>
+<div class="">
+<span class="badge badge-default">Register Account.Register with valid data</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>06:31:31 am</td>
+<td>
+<a href="#" class="linked" test-id='69' id='80'>Register with valid data</a>
+<div class="">
+<span class="badge badge-default">Register Account.Register with valid data</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log badge-danger'>6</span>
+</span>
+<p class="name">@negative</p>
+<p class="duration text-sm">6 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@negative</h4>
+<span status="fail" class='badge log badge-danger'>6 failed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>06:31:19 am</td>
+<td>
+<a href="#" class="linked" test-id='1' id='14'>Login with invalid credentials</a>
+<div class="">
+<span class="badge badge-default">Login functionality.Login with invalid credentials</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>06:31:21 am</td>
+<td>
+<a href="#" class="linked" test-id='1' id='25'>Login with invalid credentials</a>
+<div class="">
+<span class="badge badge-default">Login functionality.Login with invalid credentials</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>06:31:23 am</td>
+<td>
+<a href="#" class="linked" test-id='1' id='36'>Login with invalid credentials</a>
+<div class="">
+<span class="badge badge-default">Login functionality.Login with invalid credentials</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>06:31:25 am</td>
+<td>
+<a href="#" class="linked" test-id='1' id='47'>Login with invalid credentials</a>
+<div class="">
+<span class="badge badge-default">Login functionality.Login with invalid credentials</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>06:31:28 am</td>
+<td>
+<a href="#" class="linked" test-id='1' id='58'>Login with invalid credentials</a>
+<div class="">
+<span class="badge badge-default">Login functionality.Login with invalid credentials</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>06:31:33 am</td>
+<td>
+<a href="#" class="linked" test-id='69' id='90'>Register with duplicate email</a>
+<div class="">
+<span class="badge badge-default">Register Account.Register with duplicate email</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+</ul>
+</div>
+</div>
+<div class="test-content scrollable">
+<div class="test-content-detail">
+<div class="detail-body"></div>
+</div>
+</div>
+</div><div class="container-fluid p-4 view dashboard-view">
+<div class="row">
+<div class="col-md-3">
+<div class="card"><div class="card-body">
+<p class="m-b-0">Started</p>
+<h3>Mar 8, 2026 06:31:14 am</h3>
+</div></div>
+</div>
+<div class="col-md-3">
+<div class="card"><div class="card-body">
+<p class="m-b-0">Ended</p>
+<h3>Mar 8, 2026 06:31:51 am</h3>
+</div></div>
+</div>
+<div class="col-md-3">
+<div class="card"><div class="card-body">
+<p class="m-b-0 text-pass">Features Passed</p>
+<h3>0</h3>
+</div></div>
+</div>
+<div class="col-md-3">
+<div class="card"><div class="card-body">
+<p class="m-b-0 text-fail">Features Failed</p>
+<h3>11</h3>
+</div></div>
+</div>
+</div>
+<div class="row">
+<div class="col-md-4">
+<div class="card">
+<div class="card-header">
+<h6 class="card-title">Features</h6>
+</div>
+<div class="card-body">
+<div class="">
+<canvas id='parent-analysis' width='115' height='90'></canvas>
+</div>
+</div>
+<div class="card-footer">
+<div><small data-tooltip='0%'>
+<b>0</b> features passed
+</small>
+</div>
+<div>
+<small data-tooltip='100%'><b>11</b> features failed,
+<b>0</b> skipped, <b data-tooltip='0%'>0</b> others
+</small>
+</div>
+</div>
+</div>
+</div>
+<div class="col-md-4">
+<div class="card">
+<div class="card-header">
+<h6 class="card-title">Scenarios</h6>
+</div>
+<div class="card-body">
+<div class="">
+<canvas id='child-analysis' width='115' height='90'></canvas>
+</div>
+</div>
+<div class="card-footer">
+<div><small data-tooltip='0%'><b>0</b> scenarios passed</small></div>
+<div>
+<small data-tooltip='100%'><b>18</b> scenarios failed,
+<b>0</b> skipped, <b data-tooltip='%'>0</b> others
+</small>
+</div>
+</div>
+</div>
+</div>
+<div class="col-md-4">
+<div class="card">
+<div class="card-header">
+<h6 class="card-title">Steps</h6>
+</div>
+<div class="card-body">
+<div class="">
+<canvas id='grandchild-analysis' width='115' height='90'></canvas>
+</div>
+</div>
+<div class="card-footer">
+<div><small data-tooltip='22%'><b>17</b> steps passed</small></div>
+<div>
+<small data-tooltip='24%'><b>18</b> steps failed,
+<b>40</b> skipped, <b data-tooltip='%'>0</b> others
+</small>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="row"><div class="col-md-12">
+<div class="card"><div class="card-header"><p>Timeline</p></div>
+<div class="card-body pt-0"><div>
+<canvas id="timeline" height="120"></canvas>
+</div></div>
+</div>
+</div></div>
+<script>
+var timeline = {
+"Login functionality":13.859,"Register Account":5.897,"Add to Cart functionality":1.894,"Checkout functionality":1.851,"Contact Us functionality":1.978,"Forgot Password functionality":1.859,"Logout functionality":1.269,"Product comparison":1.89,"Remove product from cart":1.894,"Product Search":1.959,"Wishlist functionality":1.232
+};
+</script>
+<div class="row">
+<div class="col-lg-6 col-md-12 category-container">
+<div class="card">
+<div class="card-header"><p>Tags</p></div>
+<div class="card-body pb-0 pt-0"><table class="table table-sm table-bordered">
+<thead><tr class="bg-gray"><th>Name</th><th>Passed</th><th>Failed</th><th>Skipped</th><th>Others</th><th>Passed %</th></tr></thead><tbody>
+<tr>
+<td>@data</td>
+<td>0</td>
+<td>5</td>
+<td>0</td>
+<td>0</td>
+<td>0%</td>
+</tr>
+<tr>
+<td>@register</td>
+<td>0</td>
+<td>3</td>
+<td>0</td>
+<td>0</td>
+<td>0%</td>
+</tr>
+<tr>
+<td>@positive</td>
+<td>0</td>
+<td>3</td>
+<td>0</td>
+<td>0</td>
+<td>0%</td>
+</tr>
+<tr>
+<td>@negative</td>
+<td>0</td>
+<td>6</td>
+<td>0</td>
+<td>0</td>
+<td>0%</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+</div>
+</div>
+<script>
+var statusGroup = {
+parentCount: 5,
+passParent: 0,
+failParent: 11,
+warningParent: 0,
+skipParent: 0,
+childCount: 5,
+passChild: 0,
+failChild: 18,
+warningChild: 0,
+skipChild: 0,
+infoChild: 0,
+grandChildCount: 5,
+passGrandChild: 17,
+failGrandChild: 18,
+warningGrandChild: 0,
+skipGrandChild: 40,
+infoGrandChild: 0,
+eventsCount: 5,
+};
+</script>        </div>
+      </div>
+    </div>
+  </div>
+<script src="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@c05cd28cde1617b9d0c05a831daff6cb97fd9fd5/spark/js/spark-script.js"></script>
+<script type="text/javascript"></script></body>
+</html>

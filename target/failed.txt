@@ -1,0 +1,10 @@
+file:src/test/resources/features/RegisterAccount.feature:16:17
+file:src/test/resources/features/Login.feature:4:19:20:21:22:23
+file:src/test/resources/features/logout.feature:3
+file:src/test/resources/features/productComparison.feature:3
+file:src/test/resources/features/search.feature:3
+file:src/test/resources/features/contactUs.feature:7
+file:src/test/resources/features/checkout.feature:7
+file:src/test/resources/features/removeFromCart.feature:7
+file:src/test/resources/features/wishlist.feature:3
+file:src/test/resources/features/forgetPassword.feature:3

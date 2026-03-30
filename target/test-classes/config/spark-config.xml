@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<extentreports>
+    <configuration>
+        <!-- CUSTOM LOCATION: Project root + Reports folder -->
+        <reports>${user.dir}/Reports/</reports>
+        <theme>dark</theme>
+        <documentTitle>Sneha Sahu - OpenCart SDET Report</documentTitle>
+        <reportName>OpenCart Automation Suite</reportName>
+        <screenshot>on-failure</screenshot>
+    </configuration>
+</extentreports>

@@ -1,0 +1,394 @@
+-------------------------------------------------------------------------------
+Test set: runners.TestRunnerClass
+-------------------------------------------------------------------------------
+Tests run: 14, Failures: 13, Errors: 0, Skipped: 0, Time elapsed: 26.21 s <<< FAILURE! -- in runners.TestRunnerClass
+runners.TestRunnerClass.runScenario["Successful account registration", "Register a new Account"](2) -- Time elapsed: 1.098 s <<< FAILURE!
+io.cucumber.testng.UndefinedStepException: 
+The step 'the user is on the Qafox.com registration page' and 5 other step(s) are undefined.
+You can implement these steps using the snippet(s) below:
+
+@Given("the user is on the Qafox.com registration page")
+public void the_user_is_on_the_qafox_com_registration_page() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@When("the user enters personal details:")
+public void the_user_enters_personal_details(io.cucumber.datatable.DataTable dataTable) {
+    // Write code here that turns the phrase above into concrete actions
+    // For automatic transformation, change DataTable to one of
+    // E, List<E>, List<List<E>>, List<Map<K,V>>, Map<K,V> or
+    // Map<K, List<V>>. E,K,V must be a String, Integer, Float,
+    // Double, Byte, Short, Long, BigInteger or BigDecimal.
+    //
+    // For other transformations you can register a DataTableType.
+    throw new io.cucumber.java.PendingException();
+}
+@When("the user agrees to the Privacy Policy")
+public void the_user_agrees_to_the_privacy_policy() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@When("the user clicks on {string} button")
+public void the_user_clicks_on_button(String string) {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@Then("the user should see the success message {string}")
+public void the_user_should_see_the_success_message(String string) {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@Then("a screenshot is taken with name {string}")
+public void a_screenshot_is_taken_with_name(String string) {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+
+	at ✽.the user is on the Qafox.com registration page(file:///D:/OpenCartAutomationProject/src/test/resources/features/RegisterAccount.feature:8)
+
+runners.TestRunnerClass.runScenario["Search with valid product name", "Product Search"](3) -- Time elapsed: 0.909 s <<< FAILURE!
+io.cucumber.testng.UndefinedStepException: 
+The step 'User is on the home page' and 3 other step(s) are undefined.
+You can implement these steps using the snippet(s) below:
+
+@Given("User is on the home page")
+public void user_is_on_the_home_page() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@When("User enters product name in search box")
+public void user_enters_product_name_in_search_box() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@When("User clicks on search button")
+public void user_clicks_on_search_button() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@Then("User should see search results")
+public void user_should_see_search_results() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+
+	at ✽.User is on the home page(file:///D:/OpenCartAutomationProject/src/test/resources/features/Serach.feature:8)
+
+runners.TestRunnerClass.runScenario["Search with invalid product name", "Product Search"](4) -- Time elapsed: 0.918 s <<< FAILURE!
+io.cucumber.testng.UndefinedStepException: 
+The step 'User is on the home page' and 3 other step(s) are undefined.
+You can implement these steps using the snippet(s) below:
+
+@Given("User is on the home page")
+public void user_is_on_the_home_page() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@When("User enters invalid product name")
+public void user_enters_invalid_product_name() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@When("User clicks on search button")
+public void user_clicks_on_search_button() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@Then("User should see no product found message")
+public void user_should_see_no_product_found_message() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+
+	at ✽.User is on the home page(file:///D:/OpenCartAutomationProject/src/test/resources/features/Serach.feature:14)
+
+runners.TestRunnerClass.runScenario["Add product to cart successfully", "Add product to cart"](5) -- Time elapsed: 0.920 s <<< FAILURE!
+io.cucumber.testng.UndefinedStepException: 
+The step 'User is on the home page' and 4 other step(s) are undefined.
+You can implement these steps using the snippet(s) below:
+
+@Given("User is on the home page")
+public void user_is_on_the_home_page() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@When("User searches for a product")
+public void user_searches_for_a_product() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@When("User selects the product")
+public void user_selects_the_product() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@When("User clicks on Add to Cart button")
+public void user_clicks_on_add_to_cart_button() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@Then("Product should be added to cart successfully")
+public void product_should_be_added_to_cart_successfully() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+
+	at ✽.User is on the home page(file:///D:/OpenCartAutomationProject/src/test/resources/features/addToCart.feature:8)
+
+runners.TestRunnerClass.runScenario["Checkout product successfully", "Checkout functionality"](6) -- Time elapsed: 0.985 s <<< FAILURE!
+io.cucumber.testng.UndefinedStepException: 
+The step 'User has product in cart' and 4 other step(s) are undefined.
+You can implement these steps using the snippet(s) below:
+
+@Given("User has product in cart")
+public void user_has_product_in_cart() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@When("User proceeds to checkout")
+public void user_proceeds_to_checkout() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@When("User enters billing details")
+public void user_enters_billing_details() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@When("User confirms the order")
+public void user_confirms_the_order() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@Then("Order should be placed successfully")
+public void order_should_be_placed_successfully() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+
+	at ✽.User has product in cart(file:///D:/OpenCartAutomationProject/src/test/resources/features/checkout.feature:8)
+
+runners.TestRunnerClass.runScenario["Submit contact form", "Contact Us form"](7) -- Time elapsed: 0.954 s <<< FAILURE!
+io.cucumber.testng.UndefinedStepException: 
+The step 'User navigates to Contact Us page' and 3 other step(s) are undefined.
+You can implement these steps using the snippet(s) below:
+
+@Given("User navigates to Contact Us page")
+public void user_navigates_to_contact_us_page() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@When("User enters name email and enquiry")
+public void user_enters_name_email_and_enquiry() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@When("User clicks submit button")
+public void user_clicks_submit_button() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@Then("Message should be sent successfully")
+public void message_should_be_sent_successfully() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+
+	at ✽.User navigates to Contact Us page(file:///D:/OpenCartAutomationProject/src/test/resources/features/contactUs.feature:8)
+
+runners.TestRunnerClass.runScenario["Reset password with registered email", "Forgot Password Functionality"](8) -- Time elapsed: 0.972 s <<< FAILURE!
+io.cucumber.testng.UndefinedStepException: 
+The step 'User is on the Forgot Password page' and 3 other step(s) are undefined.
+You can implement these steps using the snippet(s) below:
+
+@Given("User is on the Forgot Password page")
+public void user_is_on_the_forgot_password_page() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@When("User enters a registered email address")
+public void user_enters_a_registered_email_address() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@When("User clicks on Continue button")
+public void user_clicks_on_continue_button() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@Then("Password reset confirmation message should be displayed")
+public void password_reset_confirmation_message_should_be_displayed() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+
+	at ✽.User is on the Forgot Password page(file:///D:/OpenCartAutomationProject/src/test/resources/features/forgetPassword.feature:8)
+
+runners.TestRunnerClass.runScenario["Reset password with unregistered email", "Forgot Password Functionality"](9) -- Time elapsed: 0.970 s <<< FAILURE!
+io.cucumber.testng.UndefinedStepException: 
+The step 'User is on the Forgot Password page' and 3 other step(s) are undefined.
+You can implement these steps using the snippet(s) below:
+
+@Given("User is on the Forgot Password page")
+public void user_is_on_the_forgot_password_page() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@When("User enters an unregistered email address")
+public void user_enters_an_unregistered_email_address() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@When("User clicks on Continue button")
+public void user_clicks_on_continue_button() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@Then("Warning message for invalid email should be displayed")
+public void warning_message_for_invalid_email_should_be_displayed() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+
+	at ✽.User is on the Forgot Password page(file:///D:/OpenCartAutomationProject/src/test/resources/features/forgetPassword.feature:8)
+
+runners.TestRunnerClass.runScenario["Reset password with empty email field", "Forgot Password Functionality"](10) -- Time elapsed: 0.901 s <<< FAILURE!
+io.cucumber.testng.UndefinedStepException: 
+The step 'User is on the Forgot Password page' and 3 other step(s) are undefined.
+You can implement these steps using the snippet(s) below:
+
+@Given("User is on the Forgot Password page")
+public void user_is_on_the_forgot_password_page() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@When("User leaves the email field blank")
+public void user_leaves_the_email_field_blank() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@When("User clicks on Continue button")
+public void user_clicks_on_continue_button() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@Then("Email required validation message should be displayed")
+public void email_required_validation_message_should_be_displayed() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+
+	at ✽.User is on the Forgot Password page(file:///D:/OpenCartAutomationProject/src/test/resources/features/forgetPassword.feature:8)
+
+runners.TestRunnerClass.runScenario["Navigate back to login page", "Forgot Password Functionality"](11) -- Time elapsed: 0.948 s <<< FAILURE!
+io.cucumber.testng.UndefinedStepException: 
+The step 'User is on the Forgot Password page' and 2 other step(s) are undefined.
+You can implement these steps using the snippet(s) below:
+
+@Given("User is on the Forgot Password page")
+public void user_is_on_the_forgot_password_page() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@When("User clicks on Back button")
+public void user_clicks_on_back_button() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@Then("User should be navigated to Login page")
+public void user_should_be_navigated_to_login_page() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+
+	at ✽.User is on the Forgot Password page(file:///D:/OpenCartAutomationProject/src/test/resources/features/forgetPassword.feature:8)
+
+runners.TestRunnerClass.runScenario["Compare two products", "Product comparison"](12) -- Time elapsed: 1.129 s <<< FAILURE!
+io.cucumber.testng.UndefinedStepException: 
+The step 'User is on home page' and 4 other step(s) are undefined.
+You can implement these steps using the snippet(s) below:
+
+@Given("User is on home page")
+public void user_is_on_home_page() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@When("User adds first product to compare")
+public void user_adds_first_product_to_compare() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@When("User adds second product to compare")
+public void user_adds_second_product_to_compare() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@When("User navigates to product comparison page")
+public void user_navigates_to_product_comparison_page() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@Then("Both products should be displayed for comparison")
+public void both_products_should_be_displayed_for_comparison() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+
+	at ✽.User is on home page(file:///D:/OpenCartAutomationProject/src/test/resources/features/productComparison.feature:8)
+
+runners.TestRunnerClass.runScenario["Remove product from cart", "Remove product from cart"](13) -- Time elapsed: 1.047 s <<< FAILURE!
+io.cucumber.testng.UndefinedStepException: 
+The step 'User has product in the cart' and 3 other step(s) are undefined.
+You can implement these steps using the snippet(s) below:
+
+@Given("User has product in the cart")
+public void user_has_product_in_the_cart() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@When("User navigates to cart page")
+public void user_navigates_to_cart_page() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@When("User clicks remove button")
+public void user_clicks_remove_button() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@Then("Product should be removed from cart")
+public void product_should_be_removed_from_cart() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+
+	at ✽.User has product in the cart(file:///D:/OpenCartAutomationProject/src/test/resources/features/removeFromCart.feature:8)
+
+runners.TestRunnerClass.runScenario["Add product to wishlist", "Add product to wishlist"](14) -- Time elapsed: 0.875 s <<< FAILURE!
+io.cucumber.testng.UndefinedStepException: 
+The step 'User is logged into the application' and 3 other step(s) are undefined.
+You can implement these steps using the snippet(s) below:
+
+@Given("User is logged into the application")
+public void user_is_logged_into_the_application() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@When("User searches for a product")
+public void user_searches_for_a_product() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@When("User clicks on Add to Wishlist")
+public void user_clicks_on_add_to_wishlist() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@Then("Product should be added to wishlist")
+public void product_should_be_added_to_wishlist() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+
+	at ✽.User is logged into the application(file:///D:/OpenCartAutomationProject/src/test/resources/features/wishlist.feature:8)
+

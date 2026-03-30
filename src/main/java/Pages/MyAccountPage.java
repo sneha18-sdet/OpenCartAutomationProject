@@ -1,35 +1,32 @@
 package Pages;
 
-import java.util.List;
+import java.time.Duration;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 
-public class MyAccountPage extends BasePage {
-	public MyAccountPage(WebDriver driver) {
-		super(driver);
-	}
-	
-	
-	
-	@FindBy(xpath = "//div[@id = 'content']//ul[@class = 'list-unstyled']")   List<WebElement> Myheadlinelinks;
-	
-	@FindBy(xpath = "//h2[text()='My Account']")  WebElement MyHeaderName;
-	
-	
-	
-	public void MyAccountlinks(String linkName) {
-		for (WebElement link : Myheadlinelinks) {
-            if (link.getText().trim().equalsIgnoreCase(linkName)) {
-                link.click();
-                return;
-            }}
-		
-	}
-	
-	public boolean IsAtMyAccountPage() {
-		return MyHeaderName.isDisplayed();
-	}
-	
+import factory.DriverManager;
+
+public class MyAccountPage extends BasePage{
+
+    
+    private WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+
+    // Header or breadcrumb that appears on My Account page
+    @FindBy(xpath = "//h2[normalize-space()='My Account'] | //h1[normalize-space()='My Account']")
+    private WebElement myAccountHeader;
+
+    
+
+    public boolean IsAtMyAccountPage() {
+        try {
+            wait.until(ExpectedConditions.visibilityOf(myAccountHeader));
+            return myAccountHeader.isDisplayed();
+        } catch (Exception e) {
+            return false;
+        }
+    }
 }

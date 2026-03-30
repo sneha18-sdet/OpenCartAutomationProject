@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="OpenCartSuite" parallel="tests" thread-count="3">
+  
+  <test name="LoginTests">
+    <parameter name="cucumber.filter.tags" value="@login"/>
+    <classes>
+      <class name="runners.TestRunnerClass"/>
+    </classes>
+  </test>
+  
+  <test name="RegisterTests">
+    <parameter name="cucumber.filter.tags" value="@register"/>
+    <classes>
+      <class name="runners.TestRunnerClass"/>
+    </classes>
+  </test>
+
+</suite>
